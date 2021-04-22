@@ -2,7 +2,7 @@
 
 Tiny lib to manipulate the .line format (.rm in the reMarkable2) in Go
 
-Exemple:
+Example:
 
 [embedmd]:# (example/cmd/main.go go)
 ```go
