@@ -1,10 +1,3 @@
-# linestogo
-
-Tiny lib to manipulate the .line format (.rm in the reMarkable2) in Go
-
-Exemple:
-[embedmd]:# (example/cmd/main.go go)
-```go
 package main
 
 import (
@@ -23,4 +16,3 @@ func main() {
 	}
 	pretty.Print(p)
 }
-```
