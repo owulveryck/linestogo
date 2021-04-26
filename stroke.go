@@ -2,6 +2,8 @@ package linestogo
 
 import (
 	"encoding/binary"
+	"image"
+	"image/draw"
 	"io"
 )
 
@@ -16,9 +18,9 @@ func (s *Stroke) readFrom(r io.Reader) error {
 	var buf struct {
 		Pen         int32
 		Color       int32
-		_           int32
+		_           [4]byte
 		Width       float32
-		_           int32
+		_           [4]byte
 		NumSegments int32
 	}
 	err := binary.Read(r, binary.LittleEndian, &buf)
@@ -37,4 +39,10 @@ func (s *Stroke) readFrom(r io.Reader) error {
 		}
 	}
 	return nil
+}
+
+// Draw aligns r.Min in dst with sp in src and then replaces the
+// rectangle r in dst with the result of drawing src on dst.
+func (s *Stroke) Draw(dst draw.Image, r image.Rectangle, src image.Image, sp image.Point) {
+	panic("not implemented") // TODO: Implement
 }
