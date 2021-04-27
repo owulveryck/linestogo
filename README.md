@@ -1,5 +1,7 @@
 # linestogo
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/owulveryck/linestogo.svg)](https://pkg.go.dev/github.com/owulveryck/linestogo)
+
 Tiny lib to manipulate the .line format (.rm in the reMarkable2) in Go
 
 Example:
