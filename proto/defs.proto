@@ -1,0 +1,29 @@
+syntax = "proto3";
+package linestogo;
+
+option go_package = "github.com/owulveryck/linestogo";
+
+message Page {
+  string header = 1;
+  repeated Layer layers = 2;
+}
+
+message Layer {
+    repeated Stroke strokes = 1;
+}
+
+message Stroke {
+    uint32 pen = 1;
+    uint32 stroke_color = 2;
+    float pen_width = 3;
+    repeated Segment segments = 4;
+}
+
+message Segment {
+    float x = 1;
+    float y = 2;
+    float speed=3;
+    float width = 4;
+    float direction=5;
+    float pressure=6;
+}

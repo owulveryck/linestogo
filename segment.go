@@ -5,15 +5,6 @@ import (
 	"io"
 )
 
-type Segment struct {
-	X         float32
-	Y         float32
-	Speed     float32
-	Direction float32
-	Width     float32
-	Pressure  float32
-}
-
 func (s *Segment) readFrom(r io.Reader) error {
 	var buf struct {
 		X         float32

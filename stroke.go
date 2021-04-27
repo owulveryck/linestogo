@@ -10,13 +10,6 @@ import (
 
 var colors = []string{"black", "grey", "white"}
 
-type Stroke struct {
-	Pen         uint32
-	StrokeColor uint32
-	PenWidth    float32
-	Segments    []*Segment
-}
-
 func (s *Stroke) readFrom(r io.Reader) error {
 	var buf struct {
 		Pen         int32

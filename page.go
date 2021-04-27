@@ -9,15 +9,6 @@ import (
 	"strings"
 )
 
-func (p *Page) String() string {
-	return p.Header
-}
-
-type Page struct {
-	Header string
-	Layers []*Layer
-}
-
 // readFrom r and fill p
 func (p *Page) readFrom(r io.Reader) error {
 	var buf struct {

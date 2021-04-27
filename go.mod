@@ -3,9 +3,10 @@ module github.com/owulveryck/linesToGo
 go 1.15
 
 require (
-	github.com/davecgh/go-spew v1.1.1
+	github.com/fsnotify/fsnotify v1.4.9
 	github.com/kr/pretty v0.2.1
-	github.com/tdewolff/canvas v0.0.0-20210422003146-b9d4ec8296b0 // indirect
-	golang.org/x/exp v0.0.0-20210423165448-e860ab8327da
 	golang.org/x/image v0.0.0-20210220032944-ac19c3e999fb
+	golang.org/x/sys v0.0.0-20210426230700-d19ff857e887 // indirect
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	google.golang.org/protobuf v1.26.0
 )

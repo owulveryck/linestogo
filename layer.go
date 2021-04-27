@@ -7,10 +7,6 @@ import (
 	"io"
 )
 
-type Layer struct {
-	Strokes []*Stroke
-}
-
 // readFrom r and fill l
 func (l *Layer) readFrom(r io.Reader) error {
 	var numStrokes int32
