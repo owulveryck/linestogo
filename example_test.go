@@ -1,4 +1,4 @@
-package main
+package linestogo_test
 
 import (
 	"encoding/xml"
@@ -8,7 +8,7 @@ import (
 	linestogo "github.com/owulveryck/linesToGo"
 )
 
-func main() {
+func Example_svg() {
 	p := &linestogo.Page{}
 	err := linestogo.Read(os.Stdin, p)
 	if err != nil {
@@ -21,5 +21,4 @@ func main() {
 		log.Fatal(err)
 	}
 	enc.Flush()
-
 }

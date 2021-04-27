@@ -1,6 +1,6 @@
-<svg width="1872" height="1404" viewBox="0 0 1404 1872" xmlns="http://www.w3.org/2000/svg">
+<svg width="1404" height="1872" viewBox="0 0 1404 1872" xmlns="http://www.w3.org/2000/svg">
     <g id="layer_0">
-        <g id="stroke_0_0">
+        <g id="layer_0_stroke_0">
             <polyline points="587.11 566.59, 587.92 566.46, 588.97 566.60, 589.36 566.61, 589.34 566.61, 589.11 566.67" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="589.11 566.67, 588.84 566.79" stroke="black" fill="none" class="pen15" stroke-width="3.09px"></polyline>
             <polyline points="588.84 566.79, 588.68 566.98" stroke="black" fill="none" class="pen15" stroke-width="3.23px"></polyline>
@@ -166,7 +166,7 @@
             <polyline points="339.61 826.73, 334.91 826.71" stroke="black" fill="none" class="pen15" stroke-width="3.64px"></polyline>
             <polyline points="334.91 826.71, 330.30 826.67" stroke="black" fill="none" class="pen15" stroke-width="3.34px"></polyline>
         </g>
-        <g id="stroke_0_1">
+        <g id="layer_0_stroke_1">
             <polyline points="635.42 966.63, 636.80 964.94, 639.41 962.18, 641.23 960.55, 642.37 959.68, 643.18 959.13" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="643.18 959.13, 644.05 958.49" stroke="black" fill="none" class="pen15" stroke-width="2.97px"></polyline>
             <polyline points="644.05 958.49, 644.86 957.90" stroke="black" fill="none" class="pen15" stroke-width="3.31px"></polyline>
@@ -339,7 +339,7 @@
             <polyline points="626.83 1305.67, 625.49 1307.13" stroke="black" fill="none" class="pen15" stroke-width="3.68px"></polyline>
             <polyline points="625.49 1307.13, 624.30 1308.80" stroke="black" fill="none" class="pen15" stroke-width="3.32px"></polyline>
         </g>
-        <g id="stroke_0_2">
+        <g id="layer_0_stroke_2">
             <polyline points="434.82 1185.27, 434.77 1184.48, 434.79 1183.28, 434.78 1182.44, 434.64 1181.89, 434.53 1181.59, 434.20 1181.28, 433.97 1180.92, 433.87 1180.54" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="433.87 1180.54, 433.69 1180.26" stroke="black" fill="none" class="pen15" stroke-width="2.99px"></polyline>
             <polyline points="433.69 1180.26, 433.21 1179.99" stroke="black" fill="none" class="pen15" stroke-width="3.08px"></polyline>
@@ -519,7 +519,7 @@
             <polyline points="342.19 1435.10, 344.41 1436.25" stroke="black" fill="none" class="pen15" stroke-width="3.56px"></polyline>
             <polyline points="344.41 1436.25, 346.39 1437.34" stroke="black" fill="none" class="pen15" stroke-width="3.22px"></polyline>
         </g>
-        <g id="stroke_0_3">
+        <g id="layer_0_stroke_3">
             <polyline points="329.09 290.88, 329.19 290.88, 329.18 291.25" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="329.18 291.25, 329.18 291.33" stroke="black" fill="none" class="pen15" stroke-width="3.2px"></polyline>
             <polyline points="329.18 291.33, 329.18 291.34" stroke="black" fill="none" class="pen15" stroke-width="3.73px"></polyline>
@@ -554,7 +554,7 @@
             <polyline points="455.50 339.71, 456.91 338.77" stroke="black" fill="none" class="pen15" stroke-width="3.98px"></polyline>
             <polyline points="456.91 338.77, 458.02 337.99" stroke="black" fill="none" class="pen15" stroke-width="3.51px"></polyline>
         </g>
-        <g id="stroke_0_4">
+        <g id="layer_0_stroke_4">
             <polyline points="455.72 264.87, 455.54 264.46, 455.26 263.68, 455.30 263.29" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="455.30 263.29, 455.34 263.26" stroke="black" fill="none" class="pen15" stroke-width="3.46px"></polyline>
             <polyline points="455.34 263.26, 455.37 263.38" stroke="black" fill="none" class="pen15" stroke-width="3.83px"></polyline>
@@ -574,7 +574,7 @@
             <polyline points="459.35 265.50, 459.92 265.78" stroke="black" fill="none" class="pen15" stroke-width="3.87px"></polyline>
             <polyline points="459.92 265.78, 459.92 265.78" stroke="black" fill="none" class="pen15" stroke-width="3.34px"></polyline>
         </g>
-        <g id="stroke_0_5">
+        <g id="layer_0_stroke_5">
             <polyline points="482.02 301.60, 482.41 301.60, 482.82 301.45, 482.90 301.14" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="482.90 301.14, 483.05 301.32" stroke="black" fill="none" class="pen15" stroke-width="3.53px"></polyline>
             <polyline points="483.05 301.32, 483.11 301.50" stroke="black" fill="none" class="pen15" stroke-width="3.92px"></polyline>
@@ -592,7 +592,7 @@
             <polyline points="537.78 281.00, 538.08 281.32" stroke="black" fill="none" class="pen15" stroke-width="3.76px"></polyline>
             <polyline points="538.08 281.32, 538.50 281.46" stroke="black" fill="none" class="pen15" stroke-width="3.32px"></polyline>
         </g>
-        <g id="stroke_0_6">
+        <g id="layer_0_stroke_6">
             <polyline points="554.52 328.47, 554.65 328.59, 554.77 328.85, 555.14 328.83, 555.15 328.80" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="555.15 328.80, 555.19 328.88" stroke="black" fill="none" class="pen15" stroke-width="3.06px"></polyline>
             <polyline points="555.19 328.88, 555.24 329.29" stroke="black" fill="none" class="pen15" stroke-width="3.37px"></polyline>
@@ -620,7 +620,7 @@
             <polyline points="686.49 330.69, 686.92 331.43" stroke="black" fill="none" class="pen15" stroke-width="3.83px"></polyline>
             <polyline points="686.92 331.43, 687.25 332.07" stroke="black" fill="none" class="pen15" stroke-width="3.46px"></polyline>
         </g>
-        <g id="stroke_0_7">
+        <g id="layer_0_stroke_7">
             <polyline points="650.53 249.12, 650.11 247.15, 649.17 243.63" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="649.17 243.63, 648.48 241.58" stroke="black" fill="none" class="pen15" stroke-width="3.02px"></polyline>
             <polyline points="648.48 241.58, 648.27 240.22" stroke="black" fill="none" class="pen15" stroke-width="3.66px"></polyline>
@@ -637,7 +637,7 @@
             <polyline points="644.15 231.40, 644.12 231.17" stroke="black" fill="none" class="pen15" stroke-width="3.97px"></polyline>
             <polyline points="644.12 231.17, 644.12 231.17" stroke="black" fill="none" class="pen15" stroke-width="3.37px"></polyline>
         </g>
-        <g id="stroke_0_8">
+        <g id="layer_0_stroke_8">
             <polyline points="344.73 399.49, 344.22 399.41, 343.42 399.16, 343.06 398.85, 342.91 398.75, 342.80 398.95, 342.51 399.27, 342.13 399.59, 341.75 399.86, 341.40 400.07, 341.05 400.37, 340.60 400.76, 340.32 401.19, 340.08 401.58, 339.95 401.84, 339.65 402.15, 339.48 402.41, 339.44 402.64, 339.42 402.75" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="339.42 402.75, 339.49 402.88" stroke="black" fill="none" class="pen15" stroke-width="2.98px"></polyline>
             <polyline points="339.49 402.88, 339.55 403.01" stroke="black" fill="none" class="pen15" stroke-width="3.11px"></polyline>
@@ -681,7 +681,7 @@
             <polyline points="711.63 413.30, 712.71 412.70" stroke="black" fill="none" class="pen15" stroke-width="4.09px"></polyline>
             <polyline points="712.71 412.70, 713.66 412.11" stroke="black" fill="none" class="pen15" stroke-width="3.66px"></polyline>
         </g>
-        <g id="stroke_0_9">
+        <g id="layer_0_stroke_9">
             <polyline points="765.76 616.56, 766.45 616.21, 767.73 615.28, 768.52 614.74, 768.93 614.51, 769.10 614.47, 769.19 614.64, 769.30 614.69" stroke="black" fill="none" class="pen15" stroke-width="2.96px"></polyline>
             <polyline points="769.30 614.69, 769.54 614.79" stroke="black" fill="none" class="pen15" stroke-width="3.03px"></polyline>
             <polyline points="769.54 614.79, 769.78 614.87" stroke="black" fill="none" class="pen15" stroke-width="3.12px"></polyline>
