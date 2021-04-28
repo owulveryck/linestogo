@@ -2,6 +2,8 @@ package linestogo
 
 import (
 	"context"
+	"errors"
+	"io/ioutil"
 	"log"
 	"path/filepath"
 	"strings"
@@ -42,10 +44,18 @@ func pollXochitlCacheDir(ctx context.Context) (<-chan string, error) {
 	outC := make(chan string)
 	watcher, err := fsnotify.NewWatcher()
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 
+	// Send initial page
 	go func() {
+		dir, err := findMostRecent(XochitlCacheDir)
+		if err != nil {
+			log.Println("could not find most recent dir:", err)
+		}
+
+		dir = filepath.Join(XochitlCacheDir, dir)
+		outC <- dir
 		defer watcher.Close()
 		for {
 			select {
@@ -98,6 +108,13 @@ func getCurrentPageName(ctx context.Context, dirC <-chan string) (<-chan string,
 					if err != nil {
 						log.Println(err)
 					}
+					// send initial page
+					page, err := findMostRecent(f)
+					if err != nil {
+						log.Println(err)
+					}
+					page = filepath.Join(f, page)
+					outC <- strings.Trim(strings.Trim(page, filepath.Ext(page)), "-metadata") + ".rm"
 					currDir = f
 				}
 			case event, ok := <-watcher.Events:
@@ -108,7 +125,8 @@ func getCurrentPageName(ctx context.Context, dirC <-chan string) (<-chan string,
 					t = time.Since(last)
 					if strings.Contains(event.Name, "-metadata.json") && t > 50*time.Millisecond {
 						last = time.Now()
-						outC <- strings.Trim(event.Name, "-metadata.json") + ".rm"
+						file := strings.Trim(event.Name, "-metadata.json") + ".rm"
+						outC <- file
 					}
 				}
 			case err, ok := <-watcher.Errors:
@@ -122,4 +140,27 @@ func getCurrentPageName(ctx context.Context, dirC <-chan string) (<-chan string,
 		}
 	}()
 	return outC, nil
+}
+func findMostRecent(dir string) (string, error) {
+	files, err := ioutil.ReadDir(dir)
+	if err != nil {
+		return "", err
+	}
+	var modTime time.Time
+	var names []string
+	for _, fi := range files {
+		if fi.Mode().IsRegular() {
+			if !fi.ModTime().Before(modTime) {
+				if fi.ModTime().After(modTime) {
+					modTime = fi.ModTime()
+					names = names[:0]
+				}
+				names = append(names, strings.TrimSuffix(fi.Name(), filepath.Ext(fi.Name())))
+			}
+		}
+	}
+	if len(names) == 1 {
+		return names[0], nil
+	}
+	return "", errors.New("expected only one result")
 }
