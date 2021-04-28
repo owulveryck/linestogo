@@ -53,6 +53,7 @@ func (s *Stroke) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 			i = 0
 			p := make([][2]float32, 0)
 			if pl != nil {
+				pl.Points = append(pl.Points, [2]float32{segment.X, segment.Y})
 				e.Encode(pl)
 				p = [][2]float32{pl.Points[len(pl.Points)-1]}
 			}
