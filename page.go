@@ -39,12 +39,8 @@ func (p *Page) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 		Name: xml.Name{Local: "svg"},
 		Attr: []xml.Attr{
 			{
-				Name:  xml.Name{Local: "width"},
-				Value: "1404",
-			},
-			{
-				Name:  xml.Name{Local: "height"},
-				Value: "1872",
+				Name:  xml.Name{Local: "preserveAspectRatio"},
+				Value: "xMinYMin meet",
 			},
 			{
 				Name:  xml.Name{Local: "viewBox"},
