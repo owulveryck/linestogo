@@ -27,3 +27,7 @@ message Segment {
     float direction=5;
     float pressure=6;
 }
+
+message RawPage {
+    bytes page = 1;
+}
