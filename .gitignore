@@ -1,2 +1,4 @@
 test/watcher.arm
 example/webserver/watcher.arm
+.DS_Store
+.gitignore
